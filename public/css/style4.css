@@ -1,0 +1,46 @@
+body, html{
+    height:100%;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+    }
+    
+    .firstshowcase{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    
+    background-attachment:fixed;
+    }
+    
+    .firstshowcase{
+    background-image:url('refugecamp.jpg');
+    min-height:50%;
+    text-align:center;
+    background-color:#111
+    }
+    
+    .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+    }
+    
+    .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+    }
+    
+    .ptext .border.trans{
+    background-color:transparent;
+    }

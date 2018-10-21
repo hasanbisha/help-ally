@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="css/style1.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/"><img src="img/LOGO.png" style="width: 50px; height: 45px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/">Home</a>
+                <a class="nav-item nav-link" href="/camps">Camps</a>
+                <a class="nav-item nav-link" href="/addCamp">Add Camp</a>
+            </div>
+        </div>
+    </nav>
+    {{#each camps}}
+    <div class="firstshowcase">
+        <div class="ptext">
+            <span class="border trans">
+                {{name}}
+            </span>
+        </div>
+    </div>
+    <div class="container-1">
+        <div class="box-1">
+            <h3>Location</h3>
+            <p><iframe src="{{mLink}}" width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+        </div>
+        <div class="box-2">
+            <h3>Information</h3>
+            <ul class="list-group">
+                <li class="list-group-item">Climate Conditions: {{cliConditions}}</li>
+                <li class="list-group-item">Infractuture Conditions: {{infConditions}}</li>
+                <li class="list-group-item">Terrain: {{relief}}</li>
+                <li class="list-group-item">Water Access: {{wacConditions}}</li>
+                <li class="list-group-item">Food Access: {{faConditions}}</li>
+                <li class="list-group-item">Firewood Access: {{faConditions}}</li>
+            </ul>
+        </div>
+    </div>
+
+    {{else}}
+    <p>No video ideas listes</p>
+    {{/each}}
